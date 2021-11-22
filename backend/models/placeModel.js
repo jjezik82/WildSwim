@@ -26,6 +26,11 @@ const placeSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    isApproved: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   {
     timestamps: true,
